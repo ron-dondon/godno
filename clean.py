@@ -1,6 +1,6 @@
 a=input('введите текст:')
 symbols = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя ' 
-def clean_my_text(a):
+def clean(a):
     res= []
     a= a.lower()
     for i in a:
@@ -9,4 +9,4 @@ def clean_my_text(a):
 
     return "".join(res) #склеиваем буквы в строку
 
-print(clean_my_text(a))
+print(clean(a))
