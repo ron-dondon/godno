@@ -13,11 +13,11 @@ def anagram(a):
         for clean_word in filtr_words:
             l_count = {}
 
-        for i in clean_word:
-            if i in l_count:
-                l_count[i] += 1
-            else:
-                l_count[i] = 1
+            for i in clean_word:
+                if i in l_count:
+                    l_count[i] += 1
+                else:
+                    l_count[i] = 1
         
         c = tuple(sorted(l_count.items()))
         if c in b:
